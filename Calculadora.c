@@ -112,7 +112,13 @@ void subtracao(void) {
 }
 
 void multiplicacao(void) {
-    printf("\n[Em desenvolvimento: Multiplicação]\n\n");
+    float a, b;
+    printf("\n--- MULTIPLICAÇÃO ---\n");
+    printf("Digite o primeiro número: ");
+    scanf("%f", &a);
+    printf("Digite o segundo número: ");
+    scanf("%f", &b);
+    printf("Resultado: %.2f\n\n", a * b);
 }
 
 void divisao(void) {
