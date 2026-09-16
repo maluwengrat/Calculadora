@@ -1,5 +1,6 @@
 #include <stdio.h>
-#include <math.h> 
+#include <math.h>
+#include <locale.h>
 
 void exibirMenu(void);
 void soma(void);
@@ -16,6 +17,8 @@ void volumeDoCubo(void);
 void volumeDoCilindro(void);
 
 int main(void) {
+
+    setlocale(LC_ALL, "Portuguese");
     int opcao;
 
     do {
