@@ -2,78 +2,6 @@
 #include <math.h>
 #include <locale.h>
 
-void exibirMenu(void);
-void soma(void);
-void subtracao(void);
-void multiplicacao(void);
-void divisao(void);
-void exponenciacao(void);
-void raizQuadrada(void);
-void somaDeNValores(void);
-void calculoDeSequenciaDeFibonacci(void);
-void areaDoCirculo(void);
-void areaDoRetangulo(void);
-void volumeDoCubo(void);
-void volumeDoCilindro(void);
-
-int main(void) {
-
-    setlocale(LC_ALL, "Portuguese");
-    int opcao;
-
-    do {
-        exibirMenu();
-        scanf("%d", &opcao);
-
-        switch (opcao) {
-            case 1:
-                soma();
-                break;
-            case 2:
-                subtracao();
-                break;
-            case 3:
-                multiplicacao();
-                break;
-            case 4:
-                divisao();
-                break;
-            case 5:
-                exponenciacao();
-                break;
-            case 6:
-                raizQuadrada();
-                break;
-            case 7:
-                somaDeNValores();
-                break;
-            case 8:
-                calculoDeSequenciaDeFibonacci();
-                break;
-            case 9:
-                areaDoCirculo();
-                break;
-            case 10:
-                areaDoRetangulo();
-                break;
-            case 11:
-                volumeDoCubo();
-                break;
-            case 12:
-                volumeDoCilindro();
-                break;
-            case 0:
-                printf("\nSaindo do programa...\n");
-                break;
-            default:
-                printf("\nOpção inválida! Tente novamente.\n\n");
-                break;
-        }
-    } while (opcao != 0);
-
-    return 0;
-}
-
 void exibirMenu(void) {
     printf("=======================================\n");
     printf("              CALCULADORA              \n");
@@ -159,3 +87,77 @@ void volumeDoCubo(void) {
 void volumeDoCilindro(void) {
     printf("\n[Em desenvolvimento: Volume do Cilindro]\n\n");
 }
+
+void exibirMenu(void);
+void soma(void);
+void subtracao(void);
+void multiplicacao(void);
+void divisao(void);
+void exponenciacao(void);
+void raizQuadrada(void);
+void somaDeNValores(void);
+void calculoDeSequenciaDeFibonacci(void);
+void areaDoCirculo(void);
+void areaDoRetangulo(void);
+void volumeDoCubo(void);
+void volumeDoCilindro(void);
+
+int main(void) {
+
+    setlocale(LC_ALL, "Portuguese");
+    int opcao;
+
+    do {
+        exibirMenu();
+        scanf("%d", &opcao);
+
+        switch (opcao) {
+            case 1:
+                soma();
+                break;
+            case 2:
+                subtracao();
+                break;
+            case 3:
+                multiplicacao();
+                break;
+            case 4:
+                divisao();
+                break;
+            case 5:
+                exponenciacao();
+                break;
+            case 6:
+                raizQuadrada();
+                break;
+            case 7:
+                somaDeNValores();
+                break;
+            case 8:
+                calculoDeSequenciaDeFibonacci();
+                break;
+            case 9:
+                areaDoCirculo();
+                break;
+            case 10:
+                areaDoRetangulo();
+                break;
+            case 11:
+                volumeDoCubo();
+                break;
+            case 12:
+                volumeDoCilindro();
+                break;
+            case 0:
+                printf("\nSaindo do programa...\n");
+                break;
+            default:
+                printf("\nOpção inválida! Tente novamente.\n\n");
+                break;
+        }
+    } while (opcao != 0);
+
+    return 0;
+}
+
+
