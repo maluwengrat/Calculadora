@@ -88,20 +88,6 @@ void volumeDoCilindro(void) {
     printf("\n[Em desenvolvimento: Volume do Cilindro]\n\n");
 }
 
-void exibirMenu(void);
-void soma(void);
-void subtracao(void);
-void multiplicacao(void);
-void divisao(void);
-void exponenciacao(void);
-void raizQuadrada(void);
-void somaDeNValores(void);
-void calculoDeSequenciaDeFibonacci(void);
-void areaDoCirculo(void);
-void areaDoRetangulo(void);
-void volumeDoCubo(void);
-void volumeDoCilindro(void);
-
 int main(void) {
 
     setlocale(LC_ALL, "Portuguese");
