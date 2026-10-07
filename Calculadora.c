@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #include <stdlib.h>
 #include <math.h>
 #include <locale.h>
@@ -342,12 +343,26 @@ void salvarHistorico(Operacao *historico, int quantidade) {
     }
 
     for (i = 0; i < quantidade; i++) {
-        fprintf(arquivo,
-                "%s: %.2f %.2f = %.2f\n",
-                historico[i].operacao,
-                historico[i].numero1,
-                historico[i].numero2,
-                historico[i].resultado);
+
+        if (strcmp(historico[i].operacao, "Raiz quadrada") == 0 ||
+            strcmp(historico[i].operacao, "Área do círculo") == 0 ||
+            strcmp(historico[i].operacao, "Volume do cubo") == 0) {
+
+            fprintf(arquivo,
+                    "%s: %.2f = %.2f\n",
+                    historico[i].operacao,
+                    historico[i].numero1,
+                    historico[i].resultado);
+
+        } else {
+
+            fprintf(arquivo,
+                    "%s: %.2f %.2f = %.2f\n",
+                    historico[i].operacao,
+                    historico[i].numero1,
+                    historico[i].numero2,
+                    historico[i].resultado);
+        }
     }
 
     fclose(arquivo);
